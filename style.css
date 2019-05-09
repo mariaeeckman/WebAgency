@@ -53,11 +53,8 @@ h1, footer {
 /*En-tête et liens de navigation*/
 nav
 {
-    display: flex;
-    justify-content: flex-end;
-    
-    
-    
+	margin-top: auto;
+	margin-bottom: auto;
 }
 header {
 	background: url('images/separateur.png');
