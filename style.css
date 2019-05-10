@@ -51,16 +51,25 @@ h1, footer {
 }
 
 /*En-tête et liens de navigation*/
-nav
-{
-	margin-top: auto;
-	margin-bottom: auto;
+
+#conteneur {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px
+    padding-right: 30px;
+    padding-left: 30px;
 }
+
+nav { 
+    font-weight: bold;
+    padding: 30px;
+    cursor: pointer;
+}
+
 header {
 	background: url('images/separateur.png');
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: flex-start;
     }
 .banniere_image{
    background: url('images/slider/bg1.jpg') no-repeat;
