@@ -43,7 +43,11 @@ body{
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 1rem 0 0 0;
+    /*margin: 1rem 0 0 0;*/
+    margin: 0;
+    width: 100%;
+    height: 2000px;
+
 }
 
 nav{
@@ -54,6 +58,8 @@ nav{
     background-size: 261px 57px;
     background-position: left;
     height: 57px;
+    margin: 10px;
+
     }
 
 nav ul{
@@ -80,8 +86,10 @@ nav li:hover {
 }
 
 .container{
-    max-width: 1280px;
-    margin: auto;
+    /*max-width: 1280px;*/
+   margin: 10px;
+   position: relative;
+
 }
 
 header{
@@ -90,75 +98,136 @@ header{
 
 header ul {
   	list-style-type: none;
-    margin-block-start: 0;
+
+    /*margin-block-start: 0;
     margin-block-end: 0;
-    padding-inline-start: 0;
+    padding-inline-start: 0;*/
 }
 
 header ul.diaporama{
+    padding: 0;
 }
 
 header ul.diaporama li.slide1{
-	height: 600px;
+	position: relative;
+    height: 600px;
+    background-repeat: no-repeat;
 	background-image:url("images/slider/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Roboto-medium-webfont", arial;
 
 }
 
-header ul.bouttonDiaporama{
-
+header ul.chevronDiaporama{
 }
 
-header ul.bouttonDiaporama li{
+header ul.chevronDiaporama li{
     width: 3rem;
     height: 3rem;
 }
 
-header ul.bouttonDiaporama li.gauche{
-    background-color: red;
+header ul.chevronDiaporama li.gauche{
+    background-color: #000000;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    border-radius: 0 50px 50px 0;
+    font-size: 2em;
 }
-header ul.bouttonDiaporama li.droite{
-    background-color: purple;
-}
+header ul.chevronDiaporama li.droite{
+    background-color: #000000;
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    font-size: 2em;
+    border-radius: 50px 0px 0px 50px; 
+    font-size: 2em;
 
-header h1 {text-transform: uppercase;}
+}
+header h1 {
+    text-transform: uppercase;
+}
 header .blueText {
     color: var(--blue);
 }
-h1
-{
-	display:flex;flex-wrap:
-	align-items:center;
-	padding-top: 200px;
-	padding-left: 150px;
-	padding-right: 700px;
+
+h1{
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    text-align: center;
+    font-family: "Roboto-medium-webfont", arial;
+
 }
-p
-{
-	padding-top: 10px;
-	padding-left: 150px;
+p{
+	display: block;
+    position: absolute;
+    top: 300px;
+    left: 100px;
 }
-button
-{
-	font: bold 20px;
-	padding-left: 150px
-	background: var(--blue);
-	color:var(--blue);
-	border-bottom: 4px solid var(--blue);
-	width: 120px;
+button{
+	background-color: var(--blue);
+	color: #FFFFFF;
+
+    width: 120px;
 	height: 70px;
-	margin-left: 150px;
+
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+strong{
+    font-size: 16px;
 }
 
+progress{
+    position: absolute;
+    top: 682px;
+    left: 0px;
+    width: 1560px;
+    height: 5px;
 
-
-/*    width: auto;
-    margin: auto;
 }
 h1, footer {
     font-family: roboto;
     font-weight: normal;
     text-transform: uppercase;
 }
+.conteneur_nos_services{
+    display-flex;
+    justify-content: space-between;
+    width: : 100%;
+}
+.p2{
+
+}
+
+.image_ordinateur{
+width: 45%;
+
+}
+/*3icones> 
+            <i class="fas fa-chart-pie"></i>
+            <!--Fromage-->
+            <i class="far fa-circle"></i>
+            <!--Cercle gris-->
+            <i class="far fa-circle"></i>
+            <!--Cercle bleu-->
+            <i class="fas fa-chart-line"></i>
+            <!--Flèche-->
+            <i class="far fa-circle"></i>
+            <!--Cercle gris-->
+            <i class="far fa-circle"></i>
+            <!--Cercle bleu-->
+            <i class="fas fa-cubes"></i>
+            <!--Cubes-->
+            <i class="far fa-circle"></i>
+            <!--Cercle gris-->
+            <i class="far fa-circle"></i>
+            <!--Cercle bleu-->
+
+
 
 /*En-tête et liens de navigation*/
 
