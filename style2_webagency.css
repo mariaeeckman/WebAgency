@@ -1,0 +1,285 @@
+
+@font-face {
+	font-family: "fontawesome-webfont";
+ 	src:url("fonts/fontawesome-webfont.eot")format("eot"),
+ 		url("fonts/fontawesome-webfont.svg")format("svg"),
+ 		url("fonts/fontawesome-webfont.ttf")format("ttf"),
+ 		url("fonts/fontawesome-webfont.woff")format("woff"),
+}
+@font-face {
+    font-family: "glyphicons-halflings-regular";
+    src:url("fonts/glyphicons-halflings-regular.eot")format("eot"),
+    	url("fonts/glyphicons-halflings-regular.svg")format("svg"),
+    	url("fonts/glyphicons-halflings-regular.ttf")format("ttf"),
+		url("fonts/glyphicons-halflings-regular.eot")format("eot"),
+}
+@font-face {
+    font-family: "Roboto-regular-webfont";
+    src:url("fonts/roboto-regular-webfont.eot")format("eot"),
+    	url("fonts/roboto-regular-webfont.svg") format("svg"),
+    	url("fonts/roboto-regular-webfont.ttf") format("ttf"),
+    	url("fonts/roboto-regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto-bold-webfont";
+    src:url("fonts/roboto-bold-webfont.eot")format("eot"),
+    	url("fonts/roboto-bold-webfont.svg") format("svg"),
+    	url("fonts/roboto-bold-webfont.ttf") format("ttf"),
+    	url("fonts/roboto-bold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto-medium-webfont";
+    src:url("fonts/roboto-medium-webfont.eot")format("eot"),
+    	url("fonts/roboto-medium-webfont.svg") format("svg"),
+    	url("fonts/roboto-medium-webfont.ttf") format("ttf"),
+    	url("fonts/roboto-medium-webfont.woff") format("woff");
+}
+
+:root{
+    --blue:#349dc2;
+}
+
+body{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*margin: 1rem 0 0 0;*/
+    margin: 0;
+    width: 100%;
+    height: 2000px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 261px 57px;
+    background-position: left;
+    height: 57px;
+    margin: 10px;
+
+    }
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    align-items: center;
+
+}
+
+nav li {
+    margin: 1rem;
+    border-top: 2px solid transparent;
+    display:flex;
+    height: 87px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li:hover {
+    border-top: 2px solid var(--blue);
+}
+
+.container{
+    /*max-width: 1280px;*/
+   margin: 10px;
+   position: relative;
+
+}
+
+header{
+    color:white;
+}
+
+header ul {
+  	list-style-type: none;
+
+    /*margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;*/
+}
+
+header ul.diaporama{
+    padding: 0;
+}
+
+header ul.diaporama li.slide1{
+	position: relative;
+    height: 600px;
+    background-repeat: no-repeat;
+	background-image:url("images/slider/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Roboto-medium-webfont", arial;
+
+}
+
+header ul.chevronDiaporama{
+}
+
+header ul.chevronDiaporama li{
+    width: 3rem;
+    height: 3rem;
+}
+
+header ul.chevronDiaporama li.gauche{
+    background-color: #000000;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    border-radius: 0 50px 50px 0;
+    font-size: 2em;
+}
+header ul.chevronDiaporama li.droite{
+    background-color: #000000;
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    font-size: 2em;
+    border-radius: 50px 0px 0px 50px; 
+    font-size: 2em;
+
+}
+header h1 {
+    text-transform: uppercase;
+}
+header .blueText {
+    color: var(--blue);
+}
+
+h1{
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    text-align: center;
+    font-family: "Roboto-medium-webfont", arial;
+
+}
+p{
+	display: block;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+button{
+	background-color: var(--blue);
+	color: #FFFFFF;
+
+    width: 120px;
+	height: 70px;
+
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+strong{
+    font-size: 16px;
+}
+
+progress{
+    position: absolute;
+    top: 682px;
+    left: 0px;
+    width: 1560px;
+    height: 5px;
+
+}
+h1, footer {
+    font-family: roboto;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.conteneur_nos_services{
+    display-flex;
+    justify-content: space-between;
+    width: : 100%;
+}
+.p2{
+
+}
+
+.image_ordinateur{
+width: 45%;
+
+}
+/*3icones> 
+            <i class="fas fa-chart-pie"></i>
+            <!--Fromage-->
+            <i class="far fa-circle"></i>
+            <!--Cercle gris-->
+            <i class="far fa-circle"></i>
+            <!--Cercle bleu-->
+            <i class="fas fa-chart-line"></i>
+            <!--Flèche-->
+            <i class="far fa-circle"></i>
+            <!--Cercle gris-->
+            <i class="far fa-circle"></i>
+            <!--Cercle bleu-->
+            <i class="fas fa-cubes"></i>
+            <!--Cubes-->
+            <i class="far fa-circle"></i>
+            <!--Cercle gris-->
+            <i class="far fa-circle"></i>
+            <!--Cercle bleu-->
+
+
+
+/*En-tête et liens de navigation*/
+
+/*.conteneur {
+    background-color: white;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    display: inline-flex;
+    padding-top: 50px
+    padding-bottom: 50px;
+}
+#logo{
+    display: block;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 140px;
+}
+header {
+	background: url('images/separateur.png');
+    display: flex;
+    justify-content: flex-start;
+    }
+
+nav {
+    color:grey;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 400px;
+    padding-right: 500px;
+    margin-right: 0px;
+    text-align: right;
+}
+
+.banniere_image{
+   background: url('images/slider/bg1.jpg') no-repeat;
+   background-size: cover;
+   height: 600px;
+   width: 100%;
+}
+
+h1 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 2.2em;
+  text-transform: uppercase;
+
+}
+em {color:blue;
+}
+
+*/
+/*Section principale du corp de page, au centre*/
+
+/*Pied de page*/
