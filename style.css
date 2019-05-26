@@ -1,18 +1,77 @@
-.logo{
-background-image: url("images/logo.png");
-height: 200px;
-width: 400px;
-background-repeat: no-repeat;
+body{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  height: 2000px;
 }
 
-.header{
+#logo{
+  height: 70px;
+  width: 265px;
+  background-repeat: no-repeat;
+  padding: 0.4rem 0rem 0rem 0rem;
+  margin-left: 4rem;
+}
+
+nav{
+  height: 70px;
+  width: 600px;
+  margin: 0px 0px 0px 0px;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
+  list-style-type: none;
+  height: 100%;
+  margin: auto;
+  padding: unset;
 }
 
-.menu{
-  display :flex;
-    flex-direction: row;
-    justify-content: space-around;
+a{
+  text-decoration: none;
+  color: #6b6868;
+  margin-top: -2px;
+}
+
+li{
+  font-size: 1.2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid transparent;
+
+}
+
+nav li:hover {
+    border-top: 2px solid blue;
+    /* margin-top: -2px; */
+}
+
+
+#banniere{
+  background-image: url(images/slider/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 600px;
+  margin-top: 90px;
+  width: 100%;
 }
