@@ -1,3 +1,11 @@
+*{
+    border: red solid 1px;
+}
+
+:root{
+    --blue:#349dc2;
+}
+
 body{
   border: 0;
   padding: 0;
@@ -17,7 +25,7 @@ body{
 
 nav{
   height: 70px;
-  width: 600px;
+  width: 500px;
   margin: 0px 0px 0px 0px;
 
 }
@@ -65,13 +73,75 @@ nav li:hover {
     /* margin-top: -2px; */
 }
 
-
 #banniere{
   background-image: url(images/slider/bg1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  height: 600px;
+  height: 490px;
   margin-top: 90px;
   width: 100%;
 }
+
+.texte_banniere{
+    width: 40%;
+    margin-left: 200px;
+    margin-top: 120px;
+    color: white;
+}
+
+h1 strong{
+    color: var(--blue);
+}
+
+button{
+    background-color: var(--blue);
+    color: #FFFFFF;
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 5px solid #277793;
+    border-radius: 4px ;
+}
+
+.chevrons_diaporama{
+    background-color: yellow;
+    width: 1430px;
+    height: 50px;
+   
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chevron_gauche{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chevron_droite{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas{
+    width: 30px;
+    height: 30px;
+
+}
+
+progress{
+    position: absolute;
+    top: 486px;
+    left: 0px;
+    width: 1450px;
+    height: 5px;
