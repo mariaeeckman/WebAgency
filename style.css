@@ -13,6 +13,8 @@ body{
   margin: 0;
   width: 100%;
   height: 2000px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*  HEADER*/
@@ -78,11 +80,9 @@ nav li:hover {
   background-image: url(images/slider/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
   height: 490px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  margin-top: 90px;
 }
 
 .texte_banniere{
@@ -147,10 +147,13 @@ progress{
 
 /*  NOS SERVICES*/
 #nos_services{
-    background-color: yellow;   
-    padding-top: 100px;
+    background-color: yellow;
     width: 100%;
 }
+
+.point:before, .point:after{ content:''; display:inline-block; vertical-align: middle; width: 2rem; height: 1px; background:grey;
+}
+
 
 h2,p{
     text-align: center;
@@ -161,4 +164,5 @@ h2,p{
 }
 .point{
     color: var(--blue);
+    text-align: center;
 }
