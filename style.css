@@ -15,6 +15,7 @@ body{
   height: 2000px;
 }
 
+/*  HEADER*/
 #logo{
   height: 70px;
   width: 265px;
@@ -77,10 +78,11 @@ nav li:hover {
   background-image: url(images/slider/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  
   height: 490px;
-  margin-top: 90px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .texte_banniere{
@@ -138,5 +140,25 @@ progress{
     position: absolute;
     top: 486px;
     left: 0px;
-    width: 100%;
+    width: 25%;
     height: 5px;
+    background-color: var(--blue);
+}
+
+/*  NOS SERVICES*/
+#nos_services{
+    background-color: yellow;   
+    padding-top: 100px;
+    width: 100%;
+}
+
+h2,p{
+    text-align: center;
+}
+
+.trait{
+    <p>------</p>
+}
+.point{
+    color: var(--blue);
+}
