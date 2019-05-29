@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+
+}
+
+
+
 *{
     border: red solid 1px;
+    font-family: 'robotoregular';
 }
 
 :root{
@@ -19,15 +33,15 @@ body{
 
 /*  HEADER*/
 #logo{
-  height: 70px;
+  height: 76px;
   width: 265px;
+  padding-top: 14px;
   background-repeat: no-repeat;
-  padding: 0.4rem 0rem 0rem 0rem;
   margin-left: 4rem;
 }
 
 nav{
-  height: 70px;
+  height: 90px;
   width: 500px;
   margin: 0px 0px 0px 0px;
 
@@ -38,11 +52,9 @@ header{
   justify-content: space-around;
   position: fixed;
   background-color: white;
+  height: 90px;
   width: 100%;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 100;
+  z-index: 3000;
 }
 
 ul{
@@ -51,9 +63,9 @@ ul{
   justify-content: space-around;
   align-items: baseline;
   list-style-type: none;
-  height: 100%;
+  height: 90px;
   margin: auto;
-  padding: unset;
+
 }
 
 a{
@@ -64,7 +76,7 @@ a{
 
 li{
   font-size: 1.2rem;
-  height: 100%;
+  height: 88px;
   display: flex;
   align-items: center;
   border-top: 2px solid transparent;
@@ -72,13 +84,14 @@ li{
 }
 
 nav li:hover {
-    border-top: 2px solid blue;
+    border-top: 2px solid var(--blue);
     /* margin-top: -2px; */
 }
 
 #banniere{
   background-image: url(images/slider/bg1.jpg);
   background-repeat: no-repeat;
+  position: relative;
   background-size: cover;
   height: 490px;
   width: 100%;
@@ -136,33 +149,70 @@ button{
     border-radius: 50px 0 0 50px;
 }
 
-progress{
+.progress_gauche{
     position: absolute;
-    top: 486px;
-    left: 0px;
-    width: 25%;
-    height: 5px;
+    bottom: 0px;
+    left: 0;
+    width: 30%;
+    height: 4px;
     background-color: var(--blue);
+    z-index: 2000;
 }
+
+.progress_droite{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: grey;
+    z-index: 1000;
+}
+
 
 /*  NOS SERVICES*/
 #nos_services{
-    background-color: yellow;
     width: 100%;
+    margin-top: 100px;
+
 }
 
-.point:before, .point:after{ content:''; display:inline-block; vertical-align: middle; width: 2rem; height: 1px; background:grey;
+.services{
+     text-align: center;
+
 }
 
-
-h2,p{
-    text-align: center;
+.point:before, .point:after{ 
+    content:''; display:inline-block; vertical-align: middle; width: 2rem; height: 1px; background:grey;
 }
 
-.trait{
-    <p>------</p>
-}
 .point{
     color: var(--blue);
     text-align: center;
+    font-size: 0.8em;
+}
+
+.conteneur_nos_services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.texte_services{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texte_services{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+}
+.ui_designer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
