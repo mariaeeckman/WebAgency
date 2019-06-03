@@ -3,8 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Webagency</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,19 +16,19 @@
 
 <!-- LOGO / MENU -->
 	<header>
-
 		<div id="logo">
 			<img src="images/logo.png" alt="logo">
 		</div>
-		<nav>
-			<ul>
-				<li><a href="accueil">Accueil</a></li>
-				<li><a href="services">Services</a></li>
-				<li><a href="portfolio">Portfolio</a></li>
-				<li><a href="contact">Contact</a></li>
+		<nav >
+			<ul class="nav_ul_first_page">
+				<li class="nav_ul_li_first_page"><a href="banniere">Accueil</a></li>
+				<li><a href="#nos_services">Services</a></li>
+				<li><a href="#nos_projets">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
+
 
 
 <!-- BANNIERE FILLETTE -->
@@ -41,10 +44,13 @@
 			<div class="chevrons chevron_droit"><i class="fas fa-chevron-right"></i></div>
 		</div>
 
-		<!--Barre_de_progression-->
+
+
+<!--BARRE DE PROGRESSION-->
 		<div class="progress_gauche"></div>
 		<div class="progress_droite"></div>
 	</section>
+
 
 
 <!-- NOS SERVICES -->
@@ -61,46 +67,91 @@
 		<div class="conteneur_nos_services">
 
 			<div class="image_ordinateur">
-			<img src="images/main-feature.png" alt="image ordinateur"/>
+				<img src="images/main-feature.png" alt="image ordinateur"/>
 			</div>
+
 
 			<div class="texte_services">
 
 				<div id="ux_designer">
+					<div class="point_bleu">
+						<div class="icone"><i class="fas fa-chart-line"></i></div>
+						<div class="point_bleu"><i class="fas fa-circle"></i></div>
+					</div>
 					<div class="texte">
 						<h3>UX DESIGNER</h3>
-						<P>Grace à l'UX Design, vous mmmmmmmmmmmmmmmm</P>
+						<P class="p2">Grace à l'UX Design, vous mmmmmmmmmmmmmmmm</P>
 					</div>
-						<div class="icone_point2">
-						<div class="icone"><i class="fas fa-chart-line"></i></div>
-						<div class="point"></div>
-						</div>
 				</div>
+
 
 				<div id="ui_design">
+					<div class="point_bleu">
+						<div class="icone"><i class="fas fa-cubes"></i></div>
+						<div class="point_bleu"><i class="fas fa-circle"></i></div>
+					</div>
 					<div class="texte">
 						<h3>UI DESIGNE</h3>
-						<P>mmmmmmmmmmmmmmmmmmmmmmmmmmm</P>
+						<P class="p2">mmmmmmmmmmmmmmmmmmmmmmmmmmm</P>
 					</div>
-				<div class="icone_point2">
-					<div class="icone"><i class="fas fa-cubes"></i></div>
-					<div class="point"></div>
-				</div>
-				
-
-				<div id="seo">
-					<div class="texte">
-						<h3>SEO</h3>
-						<P>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</P>
-					</div>
-					<div class="icone_point2">
-						<div class="icone"><i class="fas fa-chart-pie"></i></div>
-						<div class="point"></div>
-					</div>
-				</div>
 			</div>
 
 
+				<div id="seo">
+					<div class="point_bleu">
+						<div class="icone"><i class="fas fa-chart-pie"></i></div>
+						<div class="point_bleu"><i class="fas fa-circle"></i></div>
+					</div>
+					<div class="texte">
+						<h3>SEO</h3>
+						<P class="p2">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</P>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+
+
+
+<!-- NOS PROJETS  -->
+	<section id="nos_projets">
+
+		<div class="projets">
+			<h2>NOS PROJETS</h2>
+			<div class="point">
+				<i class="fas fa-circle"></i>
+			</div>
+			<p>Découvrez quelques unes de nos création !</p>
+		</div>
+
+		<div class="barre_menu">
+			<ul class="barre_menu_ul">
+				<li class="barre_menu_ul_li"><a href="services">Nos Services</a></li>
+				<li><a href="projets">Nos Projets</a></li>
+				<li><a href="societe">La Société</a></li>
+				<li><a href="portfolio">Portfolio</a></li>
+			</ul>
+		</div>
+
+
+<!--  8 FIGURES  -->
+		<div class="conteneur_figures">
+
+			<figure class="lunettes">
+				<img src="images/portfolio/01.jpg" class="img1">
+					<figcaption class="texte_hover">
+						<p><span>Histoire d'y voir !</span></p>
+						<p>Lunettes</p>
+						 	<a href="#"></a>
+
+						<div class="oeil">
+							<i class="fas fa-eye"></i>
+						</div>
+					</figcaption>
+			</figure>
+			</div>
+
+		</div>
+
 
 </body>
