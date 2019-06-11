@@ -62,8 +62,6 @@ a{
   font-size: 30px;
 
 
-
-
 }
 
 .nav_ul_li_first_page{
@@ -207,7 +205,17 @@ button{
 }
 
 .texte{
-     padding-left: 4%;
+    width: 95%;
+    padding-left: 1%;
+}
+
+.icone_et_point{
+    color: var(--blue);
+    
+    width: 15%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .icone {
@@ -220,16 +228,14 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .point_bleu{
-    color: var(--blue);
-    font-size: 1em;
-    width: 13%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    font-size: 0.9em; 
+    position: absolute;
+    left: 63px;
+   
 }
 
 h2{
@@ -295,6 +301,7 @@ h2{
     justify-content: center;
     align-items: center;
     border: none;
+    position: relative;
 }
 
 .barre_menu_ul_li:hover{
@@ -303,18 +310,27 @@ h2{
     color: white;
 }
 
-/*.barre_menu_ul_li1{
-    background-color: #349dc2ba;
-    font-size: 0.9rem;
-    width: 85px;
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-bottom: 3px solid #277793;
-}*/
+.barre_menu_ul_li:nth-child(1){
+    border-radius: 5px 0px 0px 5px;
+}
+
+.barre_menu_ul_li:nth-child(4){
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/*  TRIANGLE SOUS LE MENU  */
+#triangle{
+    position: absolute;
+    bottom: -23px;
+    color: #277793;
+    opacity: 0;
+}
+
+.barre_menu_ul_li:hover #triangle{
+    opacity: 1;  
+}
+
 
 
 /*  8 FIGURES  */
@@ -349,6 +365,7 @@ h2{
     width: 98%;
     padding-bottom: 0px;
     margin: 2px;
+    color: white;
 }
 
 figcaption{
@@ -385,83 +402,84 @@ figcaption{
 
 /* CONTACT*/
 #contact{
-  text-align: center;
+    text-align: center;
 }
 
 .footer{
-  background-color: var(--blue);
-  width: 100%;
-  height: 600px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  margin-top: 40px;
+    background-color: var(--blue);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
 }
 
 iframe{
-  width: 100%;
-  opacity: 0.6;
+    width: 100%;
+    opacity: 0.6;
 }
 
 #formulaire{
-  background-color: #fbfbfbb5;
-  border: 1px solid var(--blue);
-  width: 25%;
-  top: 5%;
-  left: 70%;
-  padding: 15px;
-  font-family: "roboto-medium-webfont", Arial, Helvetica, sans-serif;
-  text-align: left;
-  position: absolute;
-  right: 5%;
-  top: 5%;
+    background-color: #fbfbfbb5;
+    border: 1px solid var(--blue);
+    width: 25%;
+    top: 5%;
+    left: 70%;
+    padding: 15px;
+    font-family: "roboto-medium-webfont", Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: absolute;
+    right: 5%;
+    top: 5%;
 }
 
 .bouton_envoyer{
-  border-bottom: 5px solid #277793;
-  background-color: var(--blue);
-  width: 120px;
-  text-align: center;
-  padding: 4px;
-  border-radius: 2px;
-  color: white;
+    border-bottom: 5px solid #277793;
+    background-color: var(--blue);
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 2px;
+    color: white;
 }
 
 #envoyer{
-  background-color: var(--blue);
+    background-color: var(--blue);
+    border: solid var(--blue);
 }
 
   #nom {
-  width: 100%;
-  height: 20px;
-  border-radius: 4px;
-  border: 1px solid #AAA;
-  padding: 15px;
-  box-sizing: border-box;
+    width: 100%;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #AAA;
+    padding: 15px;
+    box-sizing: border-box;
 }
   #prenom {
-  width: 100%;
-  height: 20px;
-  border-radius: 4px;
-  border: 1px solid #AAA;
-  padding: 15px;
-  box-sizing: border-box;
+    width: 100%;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #AAA;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
  #email {
-  width: 100%;
-  height: 20px;
-  border-radius: 4px;
-  border: 1px solid #AAA;
-  padding: 15px;
-  box-sizing: border-box;
+    width: 100%;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #AAA;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
  #message {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #AAA;
-  padding: 15px;
-  box-sizing: border-box;
-  color: white;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #AAA;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
