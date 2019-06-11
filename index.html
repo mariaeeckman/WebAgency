@@ -21,11 +21,12 @@
 		</div>
 		<nav >
 			<ul class="nav_ul_first_page">
-				<li class="nav_ul_li_first_page"><a href="banniere">Accueil</a></li>
+				<li class="nav_ul_li_first_page"><a href="#banniere">Accueil</a></li>
 				<li class="nav_ul_li_first_page"><a href="#nos_services">Services</a></li>
 				<li class="nav_ul_li_first_page"><a href="#nos_projets">Portfolio</a></li>
 				<li class="nav_ul_li_first_page"><a href="#contact">Contact</a></li>
 			</ul>
+
 		</nav>
 	</header>
 
@@ -131,17 +132,82 @@
 				<li class="barre_menu_ul_li">Corporate</li>
 				<li class="barre_menu_ul_li">Portfolio</li>
 			</ul>
+			<div id="triangle"><i class="fas fa-caret-down"></i></div>
 		</div>
 
 
-<!-- 8 FIGURES -->
+
+		<!-- 8 FIGURES -->
 		<div class="conteneur_figures">
 
-			<figure class="lunettes">
-				<img src="images/portfolio/01.jpg" class="img1">
+			<figure class="figures">
+				<img src="images/portfolio/01.jpg" class="img">
 					<figcaption class="texte_figure">
-						<p class="p_lunettes">Histoire d'y voir !</p>
-						<p class="p_lunettes">Lunettes</p>
+						<p class="p_figures">Histoire d'y voir !</p>
+						<p class="p_figures">Lunettes</p>
+
+							<div class="oeil"><i class="fas fa-eye"></i></div>
+					</figcaption>
+			</figure>
+			<figure class="figures">
+				<img src="images/portfolio/02.jpg" class="img">
+					<figcaption class="texte_figure">
+						<p class="p_figures">Le Lapin Rose</p>
+						<p class="p_figures">Lapin</p>
+
+							<div class="oeil"><i class="fas fa-eye"></i></div>
+					</figcaption>
+			</figure>
+			<figure class="figures">
+				<img src="images/portfolio/03.jpg" class="img">
+					<figcaption class="texte_figure">
+						<p class="p_figures">Le meilleur du Champagne</p>
+						<p class="p_figures">Pompadour</p>
+
+							<div class="oeil"><i class="fas fa-eye"></i></div>
+					</figcaption>
+			</figure>
+			<figure class="figures">
+				<img src="images/portfolio/04.jpg" class="img">
+					<figcaption class="texte_figure">
+						<p class="p_figures">Réalisez vos projets</p>
+						<p class="p_figures">Maquettes</p>
+
+							<div class="oeil"><i class="fas fa-eye"></i></div>
+					</figcaption>
+			</figure>
+			<figure class="figures">
+				<img src="images/portfolio/05.jpg" class="img">
+					<figcaption class="texte_figure">
+						<p class="p_figures">Lin & Coton</p>
+						<p class="p_figures">Shoping</p>
+
+							<div class="oeil"><i class="fas fa-eye"></i></div>
+					</figcaption>
+			</figure>
+			<figure class="figures">
+				<img src="images/portfolio/06.jpg" class="img">
+					<figcaption class="texte_figure">
+						<p class="p_figures">Au Fil du Temps</p>
+						<p class="p_figures">Architectes</p>
+
+							<div class="oeil"><i class="fas fa-eye"></i></div>
+					</figcaption>
+			</figure>
+			<figure class="figures">
+				<img src="images/portfolio/07.jpg" class="img">
+					<figcaption class="texte_figure">
+						<p class="p_figures">Toujours à la pointe !</p>
+						<p class="p_figures">Recherche</p>
+
+							<div class="oeil"><i class="fas fa-eye"></i></div>
+					</figcaption>
+			</figure>
+			<figure class="figures">
+				<img src="images/portfolio/08.jpg" class="img">
+					<figcaption class="texte_figure">
+						<p class="p_figures">Pour une meilleure Gestion</p>
+						<p class="p_figures">Gestion</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
 					</figcaption>
@@ -150,18 +216,25 @@
 		</div>
 	</section>
 
-
+	<!-- CONTACT -->
+			<div id="contact">
+				<h2>CONTACT</h2>
+				<div class="point">
+					<i class="fas fa-circle"></i>
+			</div>
 
 
 <!-- MAPS / FICHE CONTACT -->
-	<footer id class="footer">
+	<footer class="footer">
+
+
 
 <!-- IMAGE MAPS-->
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.219816916995!2d2.3476358651250138!3d48.87308595762674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1442c049bb%3A0x30a290491097f07f!2sWebAgency+SAS!5e0!3m2!1sfr!2sfr!4v1557218045913!5m2!1sfr!2sfr" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-				
+
 <!--FORMULAIRE CONTACT-->
 		<div id="formulaire">
-			<form method="post" action="traitement.php">			
+			<form method="post" action="traitement.php">
 				<h3>Contact info</h3>
 				<p>WebAgency SAS
 				<br>25, Rue d'Hauteville 75010 Paris
@@ -170,7 +243,7 @@
     			<p><input type="text" name="prenom" id="prenom" placeholder="Prénom" size="31" maxlength="10" /></p>
       			<p><input type="email" name="email" id="email" placeholder="Email" size="31" maxlength="10" /><p>
   				<textarea name="message" id="message" placeholder="Message" rows="9" cols="32" ></textarea>
-      			<p class="bouton_envoyer" ><input type="submit" id="envoyer" value="Envoyer" /></p> <!--Bouton Envoyer-->	   				
+      			<p class="bouton_envoyer" ><input type="submit" id="envoyer" value="Envoyer" /></p> <!--Bouton Envoyer-->
 			</form>
 		</div>
 
