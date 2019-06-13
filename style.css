@@ -4,7 +4,7 @@
 }
 
 :root{
-    --blue:#349dc2;
+    --blue:#58cef8;
 }
 
 body{
@@ -216,7 +216,7 @@ button{
     color: var(--blue);
     font-size: 2.5em;
     border: 1px solid #979797;
-    border-radius: 50% 50% 50% 50%;
+    border-radius: 50%;
     width: 70px;
     height: 70px;
     display: flex;
@@ -225,11 +225,12 @@ button{
     position: absolute;
 }
 
-.point_bleu{
-    font-size: 0.9em; 
+.point_bleu_icone{
     position: absolute;
-    left: 63px;
-   
+    left: 60px;
+    font-size: 0.8em; 
+    border: solid 3px white;
+    background-color: white;
 }
 
 h2{
@@ -272,7 +273,7 @@ h2{
     margin: auto;
 }
 
- .barre_menu_ul{
+.barre_menu_ul{
     width: 60%;
     height: 34px;
     display: flex;
@@ -398,6 +399,7 @@ figcaption{
 /* CONTACT*/
 #contact{
     text-align: center;
+    height: 1200px;
 }
 
 .footer{
@@ -440,7 +442,7 @@ iframe{
     color: white;
 }
 
-#envoyer{
+.envoyer{
     background-color: var(--blue);
     border: solid var(--blue);
     color: white;
@@ -483,3 +485,118 @@ iframe{
     padding: 15px;
     box-sizing: border-box;
     color: white;
+}
+
+
+
+/*  MEDIA QUERIES  */
+
+
+/*  FORMAT I-PAD  */
+@media all and (max-width: 768px) {
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo{
+        padding-left: 0;
+    }
+
+    nav{
+        margin-right: 80px;
+    }
+
+    .nav_ul_li_first_page{
+        margin-right: 10px;
+    }
+
+    #banniere{
+        background-size: 100%;
+        height: 260px;   
+    }
+
+    .chevrons{
+        display: none;
+    }
+    
+    .texte_banniere{
+        height: 100px;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+    .progress_gauche{
+        bottom: 0;
+    }
+ 
+    .p_nos_services{
+        
+        text-align: center;
+        margin-right: 110px;
+        margin-left: 110px;
+    }
+
+    #nos_services{
+        margin-top: 60px;
+    }
+
+    .image_ordinateur{
+        padding: 0;
+    }
+   
+    .texte_services{
+        width: 60%;
+    }
+    .icone_et_point{
+        width: 40%;
+    }
+
+    .barre_menu_ul{
+        width: 95%;
+    }
+
+    .conteneur_figures{
+        display: flex;
+        justify-content: center;
+    }
+
+    .figures{
+        width: 30%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    span{
+    font-size: 13px;
+    }
+}
+
+
+
+/*  FORMAT IPHONE 6 */
+@media all and (max-width: 375px) {
+
+    
+ header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+  #logo{
+        width: 10%;
+    }
+
+    nav{
+        ;
+    }
+
+ #banniere{
+        background-size: 100%;
+        height: ;   
+    }
+
+}
