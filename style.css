@@ -1,10 +1,11 @@
 
 *{
-   
+border: solid 1px red;
+
 }
 
 :root{
-    --blue:#58cef8;
+    --blue:#5cadd3;
 }
 
 body{
@@ -41,7 +42,7 @@ nav{
   position: relative;
   height: 90px;
   width: 27%;
- 
+
 }
 
 .nav_ul_first_page{
@@ -70,7 +71,7 @@ a{
 }
 
 .nav_ul_li_first_page:hover {
-    border-top: 2px solid var(--blue);
+    border-top: 3px solid var(--blue);
     /* margin-top: -2px; */
 }
 
@@ -84,7 +85,7 @@ a{
   margin-top: 90px;
 }
 
-.texte_banniere{   
+.texte_banniere{
     width: 40%;
     margin-left: 12%;
     margin-top: 12%;
@@ -104,8 +105,9 @@ button{
     height: 50px;
     font-size: 16px;
     border: none;
-    border-bottom: 5px solid #277793;
+    border-bottom: 5px solid #3986ab;
     border-radius: 4px ;
+    cursor: pointer;
 }
 
 .chevrons_diaporama{
@@ -129,6 +131,7 @@ button{
     font-size: x-large;
     color: white;
     background-color: #0e101061;
+    cursor: pointer;
 }
 
 .chevron_gauche{
@@ -177,7 +180,7 @@ button{
 .point_bleu{
     color: var(--blue);
     text-align: center;
-    font-size: 0.8em; 
+    font-size: 0.8em;
 }
 
 .conteneur_nos_services{
@@ -198,6 +201,7 @@ button{
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    margin-left: 4%;
 }
 
 #ux_designer, #ui_design, #seo{
@@ -212,7 +216,7 @@ button{
 
 .icone_et_point{
     color: var(--blue);
-    
+
     width: 15%;
     display: flex;
     align-items: center;
@@ -235,7 +239,7 @@ button{
 .point_bleu_icone{
     position: absolute;
     left: 60px;
-    font-size: 0.8em; 
+    font-size: 0.8em;
     border: solid 3px white;
     background-color: white;
 }
@@ -304,6 +308,7 @@ h2{
     align-items: center;
     border: none;
     position: relative;
+    cursor: pointer;
 }
 
 .barre_menu_ul_li:hover{
@@ -331,7 +336,7 @@ h2{
 }
 
 .barre_menu_ul_li:hover #triangle{
-    opacity: 1;  
+    opacity: 1;
 }
 
 
@@ -399,6 +404,7 @@ figcaption{
     position: absolute;
     right : 5%;
     bottom: 65%;
+    cursor: pointer;
 }
 
 
@@ -412,7 +418,7 @@ figcaption{
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    
+
 }
 
 iframe{
@@ -424,17 +430,17 @@ iframe{
     background-color: #fbfbfbb5;
     border: 1px solid var(--blue);
     position: absolute;
-    width: 25%;  
+    width: 25%;
     right: 5%;
     top: 2%;
-    left: 70%;
+    left: 68%;
     padding: 15px;
     font-family: "roboto-medium-webfont", Arial, Helvetica, sans-serif;
     text-align: left;
 }
 
 .bouton_envoyer{
-    border-bottom: 5px solid #277793;
+    border-bottom: 5px solid #3986ab;
     background-color: var(--blue);
     width: 120px;
     text-align: center;
@@ -447,6 +453,8 @@ iframe{
     background-color: var(--blue);
     border: solid var(--blue);
     color: white;
+    font-size: medium;
+    cursor: pointer;
 }
 
 .submit{
@@ -497,21 +505,21 @@ iframe{
 @media all and (max-width: 1025px) {
 
 #banniere{
-    position: relative;  
+    position: relative;
     height: 355px;
     margin-top: 90px;
     }
 
 .texte_banniere{
-    position: absolute; 
+    position: absolute;
     width: 50%;
     margin-left: 7%;
     margin-top: 9%;
 }
 
  button{
-    position: absolute; 
-    bottom: -45%;   
+    position: absolute;
+    bottom: -45%;
     }
 
 .progress_gauche{
@@ -543,11 +551,15 @@ iframe{
 }
 
 .conteneur_figures{
-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .figures{
-        width: 17%;
+    width: 17%;
+}
+
+#formulaire{
+    left: 67%;
 }
 
 .nom{
@@ -565,11 +577,7 @@ flex-wrap: wrap;
 .message{
     width: 100%;
 }
-
 }
-
-
-
 
 
 /*  FORMAT I-PAD  */
@@ -586,7 +594,7 @@ flex-wrap: wrap;
 
     nav{
         margin-right: 150px;
-        width: 
+        width:
     }
 
     .nav_ul_li_first_page{
@@ -596,9 +604,9 @@ flex-wrap: wrap;
     #banniere{
         position: relative;
         background-size: 100%;
-        height: 260px;   
+        height: 260px;
     }
-    
+
     .texte_banniere{
         width: 45%;
         height: 100px;
@@ -609,10 +617,10 @@ flex-wrap: wrap;
     .progress_gauche{
         bottom: 0;
     }
- 
+
     button{
        position: absolute;
-       top: 160px;   
+       top: 160px;
     }
 
     #nos_services{
@@ -629,7 +637,7 @@ flex-wrap: wrap;
     .image_ordinateur{
         padding: 0;
     }
-   
+
     .texte_services{
         width: 60%;
     }
@@ -651,14 +659,14 @@ flex-wrap: wrap;
     }
 
     #contact{
-        height: 1010px;
+        height: 600px;
         margin-top: 0;
     }
 
     #formulaire{
         width: 32%;
         top: 1%;
-        left: 60%;
+        left: 57%;
     }
 
     span{
@@ -673,20 +681,23 @@ flex-wrap: wrap;
 /*  FORMAT IPHONE 6 */
 @media all and (max-width: 376px) {
 
+  header{
+  flex-direction: column;
+  }
+
     nav{
-        top:10px;
-        position: relative;  
+        position: relative;
         margin: 0;
-        padding: 0 5px 0 0;  
-        width: 15%;
+        width: 70%
+
     }
 
     .nav_ul_first_page{
         position: absolute;
         width: 100%;
         padding: 0;
-        flex-direction: column;
-        height:80px;
+        align-items: flex-end;
+        bottom: 0;
     }
 
     .nav_ul_li_first_page{
@@ -695,26 +706,28 @@ flex-wrap: wrap;
         margin: 0;
         padding: 0;
         line-height: 0;
+        text-align: center;
     }
 
     #logo{
         width: 20%;
+
     }
 
     #banniere{
         position: relative;
         background-size: 100%;
-        height: 120px;  
-        width: 100% 
+        height: 120px;
+        width: 100%
     }
-    
+
     .texte_banniere{
         position: absolute;
         width: 90%;
-        height: 200px;       
+        height: 200px;
         margin: 12px 0 0 3px;
-    } 
-    
+    }
+
     h1{
         position: absolute;
         width: 55%;
@@ -784,12 +797,11 @@ flex-wrap: wrap;
     }
 
     #contact{
-        height: 1160px;     
+        height: 1125px;
 }
-    #formulaire{   
+    #formulaire{
        top:600px;
-       width: 92%;
+       width: 91%;
        left:0;
     }
 }
-
