@@ -1,6 +1,5 @@
 
 *{
-border: solid 1px red;
 
 }
 
@@ -41,8 +40,7 @@ header{
 nav{
   position: relative;
   height: 90px;
-  width: 27%;
-
+  width: 32%;
 }
 
 .nav_ul_first_page{
@@ -50,10 +48,11 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: baseline;
   list-style-type: none;
   width: 100%;
-  margin: auto;
+  height: 90px;
+  margin: 0 0 0 0;
+  padding-left: 0;
 }
 
 a{
@@ -67,12 +66,11 @@ a{
   height: 88px;
   display: flex;
   align-items: center;
-  border-top: 2px solid transparent;
+  border-top: 3px solid transparent;
 }
 
 .nav_ul_li_first_page:hover {
     border-top: 3px solid var(--blue);
-    /* margin-top: -2px; */
 }
 
 #banniere{
@@ -80,7 +78,7 @@ a{
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  height: 495px;
+  height: 430px;
   width: 100%;
   margin-top: 90px;
 }
@@ -98,7 +96,7 @@ h1 strong{
 
 button{
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     background-color: var(--blue);
     color: #FFFFFF;
     width: 120px;
@@ -201,7 +199,6 @@ button{
     display: flex;
     flex-direction: column;
     padding-top: 60px;
-    margin-left: 4%;
 }
 
 #ux_designer, #ui_design, #seo{
@@ -216,7 +213,7 @@ button{
 
 .icone_et_point{
     color: var(--blue);
-
+    margin-right: 40px;
     width: 15%;
     display: flex;
     align-items: center;
@@ -354,7 +351,7 @@ h2{
 
 .figures{
     margin-bottom: 20px;
-    width: 19%;
+    width: 17%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -418,7 +415,6 @@ figcaption{
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-
 }
 
 iframe{
@@ -428,7 +424,6 @@ iframe{
 
 #formulaire{
     background-color: #fbfbfbb5;
-    border: 1px solid var(--blue);
     position: absolute;
     width: 25%;
     right: 5%;
@@ -469,6 +464,7 @@ iframe{
     padding: 15px;
     box-sizing: border-box;
 }
+
 .prenom {
     width: 100%;
     height: 20px;
@@ -687,37 +683,46 @@ iframe{
 
     nav{
         position: relative;
-        margin: 0;
-        width: 70%
-
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
     }
 
     .nav_ul_first_page{
         position: absolute;
         width: 100%;
-        padding: 0;
+        height: 30px;
+        padding: 0 0 0 15px;
         align-items: flex-end;
         bottom: 0;
     }
 
     .nav_ul_li_first_page{
         font-size: 12px;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        line-height: 0;
+        width: 43px;
+        height: 20px;     
         text-align: center;
+        margin-right: 0;
     }
 
     #logo{
-        width: 20%;
+        width: 70%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 4px;
 
     }
+
+    .img_logo{
+        width: 100%;
+    }
+
 
     #banniere{
         position: relative;
         background-size: 100%;
-        height: 120px;
+        height: 130px;
         width: 100%
     }
 
@@ -732,13 +737,13 @@ iframe{
         position: absolute;
         width: 55%;
         font-size: 15px;
-        bottom: 130px;
+        bottom: 120px;
         padding-left: 15px;
     }
 
     .texte_banniere p{
         position:  absolute;
-        bottom: 30px;
+        bottom: 5px;
         color: black;
         margin-left: 35px;
         text-align: center;
@@ -765,6 +770,10 @@ iframe{
         margin: 0 0 0 12px;
     }
 
+    .texte{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
     .p_nos_services{
         width: 85%;
     }
@@ -780,6 +789,8 @@ iframe{
     .icone_et_point{
         display: flex;
         align-items: center;
+        margin-left: 10px;
+        margin-right: 0;
         padding: 0;
         width: 30%;
     }
@@ -797,10 +808,10 @@ iframe{
     }
 
     #contact{
-        height: 1125px;
+        height: 1146px;
 }
     #formulaire{
-       top:600px;
+       top:1200px;
        width: 91%;
        left:0;
     }
