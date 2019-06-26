@@ -1,12 +1,3 @@
-
-*{
-
-}
-
-:root{
-    --blue:#5cadd3;
-}
-
 body{
   border: 0;
   padding: 0;
@@ -69,8 +60,8 @@ a{
   border-top: 3px solid transparent;
 }
 
-.nav_ul_li_first_page:hover {
-    border-top: 3px solid var(--blue);
+.nav_ul_li_first_page:hover{
+    border-top: 3px solid #5cadd3;
 }
 
 #banniere{
@@ -91,13 +82,13 @@ a{
 }
 
 h1 strong{
-    color: var(--blue);
+    color: #5cadd3;
 }
 
 button{
     position: absolute;
     bottom: 20%;
-    background-color: var(--blue);
+    background-color: #5cadd3;
     color: #FFFFFF;
     width: 120px;
     height: 50px;
@@ -146,7 +137,7 @@ button{
     left: 0;
     width: 30%;
     height: 4px;
-    background-color: var(--blue);
+    background-color: #5cadd3;
     z-index: 2000;
 }
 
@@ -176,7 +167,7 @@ button{
 }
 
 .point_bleu{
-    color: var(--blue);
+    color: #5cadd3;
     text-align: center;
     font-size: 0.8em;
 }
@@ -212,7 +203,7 @@ button{
 }
 
 .icone_et_point{
-    color: var(--blue);
+    color: #5cadd3;
     margin-right: 40px;
     width: 15%;
     display: flex;
@@ -221,7 +212,7 @@ button{
 }
 
 .icone {
-    color: var(--blue);
+    color: #5cadd3;
     font-size: 2.5em;
     border: 1px solid #979797;
     border-radius: 50%;
@@ -265,7 +256,7 @@ h2{
 }
 
 .point{
-    color: var(--blue);
+    color: #5cadd3;
     text-align: center;
     font-size: 0.8em;
 }
@@ -391,7 +382,7 @@ figcaption{
     width: 30px;
     border: 1px solid white;
     border-radius: 50% ;
-    background-color: var(--blue);
+    background-color: #5cadd3;
     color: white;
 
     text-align: center;
@@ -408,7 +399,7 @@ figcaption{
 
 /* CONTACT*/
 #contact{
-    background-color: var(--blue);
+    background-color: #5cadd3;
     width: 100%;
     height: 600px;
     display: flex;
@@ -436,7 +427,7 @@ iframe{
 
 .bouton_envoyer{
     border-bottom: 5px solid #3986ab;
-    background-color: var(--blue);
+    background-color: #5cadd3;
     width: 120px;
     text-align: center;
     padding: 4px;
@@ -445,15 +436,15 @@ iframe{
 }
 
 .envoyer{
-    background-color: var(--blue);
-    border: solid var(--blue);
+    background-color: #5cadd3;
+    border: solid #5cadd3;
     color: white;
     font-size: medium;
     cursor: pointer;
 }
 
 .submit{
-    background-color: var(--blue);
+    background-color: #5cadd3;
 }
 
 .nom {
@@ -533,7 +524,7 @@ iframe{
 }
 
 .texte_services{
-    width: 50%
+    width: 50%;
     padding: 5px;
     margin-right: 30px;
 }
@@ -590,7 +581,6 @@ iframe{
 
     nav{
         margin-right: 150px;
-        width:
     }
 
     .nav_ul_li_first_page{
@@ -615,8 +605,8 @@ iframe{
     }
 
     button{
-       position: absolute;
-       top: 160px;
+        position: absolute;
+        top: 160px;
     }
 
     #nos_services{
@@ -637,6 +627,7 @@ iframe{
     .texte_services{
         width: 60%;
     }
+
     .icone_et_point{
         width: 40%;
     }
@@ -666,8 +657,8 @@ iframe{
     }
 
     span{
-    font-size: 13px;
-    padding-top: 0;
+        font-size: 13px;
+        padding-top: 0;
     }
 
 }
@@ -678,7 +669,7 @@ iframe{
 @media all and (max-width: 376px) {
 
   header{
-  flex-direction: column;
+         flex-direction: column;
   }
 
     nav{
@@ -690,9 +681,9 @@ iframe{
 
     .nav_ul_first_page{
         position: absolute;
-        width: 100%;
+        width: 80%;
         height: 30px;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 30px;
         align-items: flex-end;
         bottom: 0;
     }
@@ -711,13 +702,11 @@ iframe{
         margin-left: auto;
         margin-right: auto;
         padding-top: 4px;
-
     }
 
     .img_logo{
         width: 100%;
     }
-
 
     #banniere{
         position: relative;
@@ -774,6 +763,7 @@ iframe{
         padding-right: 12px;
         padding-left: 12px;
     }
+
     .p_nos_services{
         width: 85%;
     }
@@ -809,10 +799,11 @@ iframe{
 
     #contact{
         height: 1146px;
-}
+    }
     #formulaire{
        top:1200px;
        width: 91%;
+       height: 550px;
        left:0;
     }
 }
