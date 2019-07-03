@@ -5,10 +5,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 	<meta name="description" content="La WebAgency vous aide à réaliser tous vos projets"/>
-	<title>Webagency</title>
+	<title>Webagency - création de sites internet sur mesure</title>
+
+	<meta property="og:title" content="Webagency - création de sites internet sur mesure" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.maria-eeckman.com" />
+	<meta property="og:image" content="http://www.maria-eeckman.com/images/logo.png"/>
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -52,6 +59,9 @@
 		<div class="progress_gauche"></div>
 		<div class="progress_droite"></div>
 
+<!-- BARRE DÉGRADÉE -->
+		<div class="barre_degrade_banniere"></div>
+
 	</section>
 
 
@@ -85,7 +95,7 @@
 					</div>
 					<div class="texte">
 						<h3>UX DESIGN</h3>
-						<P>Avec l'UX Design, augmentez les performances de votre site, en le rendant parfaitement conforme aux attentes des visiteurs.</P>
+						<p>Avec l'UX Design, augmentez les performances de votre site, en le rendant parfaitement conforme aux attentes des visiteurs.</p>
 					</div>
 				</div>
 
@@ -97,7 +107,7 @@
 					</div>
 					<div class="texte">
 						<h3>UI DESIGN</h3>
-						<P class="p">Créez une interface attirante, agréable et pratique, facile à prendre en main.</P>
+						<p class="p">Créez une interface attirante, agréable et pratique, facile à prendre en main.</p>
 					</div>
 				</div>
 
@@ -109,11 +119,15 @@
 					</div>
 					<div class="texte">
 						<h3>SEO</h3>
-						<P class="p">Grace au SEO, vous bénéficiez d'une meilleure visibilité, dans les pages de résultats de recherche.</P>
+						<p class="p">Grace au SEO, vous bénéficiez d'une meilleure visibilité, dans les pages de résultats de recherche.</p>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
+<!-- BARRE DÉGRADÉE -->
+		<div class="barre_degrade_nos_services"></div>
 
 	</section>
 
@@ -132,12 +146,12 @@
 		</div>
 
 		<!-- Menu hover Triangle -->
-		<div class="barre_menu">
+		<div id="menuTriangle" class="barre_menu">
 			<ul class="barre_menu_ul">
-				<li class="barre_menu_ul_li">All Works<div id="triangle"><i class="fas fa-caret-down"></i></div></li>
-				<li class="barre_menu_ul_li">Creative<div id="triangle"><i class="fas fa-caret-down"></i></div></li>
-				<li class="barre_menu_ul_li">Corporate<div id="triangle"><i class="fas fa-caret-down"></i></div></li>
-				<li class="barre_menu_ul_li">Portfolio<div id="triangle"><i class="fas fa-caret-down"></i></div></li>
+				<li class="barre_menu_ul_li active">All Works<div class="triangle"><i class="fas fa-caret-down"></i></div></li>
+				<li class="barre_menu_ul_li">Creative<div class="triangle"><i class="fas fa-caret-down"></i></div></li>
+				<li class="barre_menu_ul_li">Corporate<div class="triangle"><i class="fas fa-caret-down"></i></div></li>
+				<li class="barre_menu_ul_li">Portfolio<div class="triangle"><i class="fas fa-caret-down"></i></div></li>
 			</ul>
 		</div>
 
@@ -148,7 +162,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/01.jpg" class="img" alt="Opticien">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Histoire d'y voir !</p>
+						<p class="p_figures p_figures_bold">Histoire d'y voir !</p>
 						<p class="p_figures">Lunettes</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -159,7 +173,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/02.jpg" class="img" alt="Déguisements">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Le Lapin Rose</p>
+						<p class="p_figures p_figures_bold">Le Lapin Rose</p>
 						<p class="p_figures">Lapin</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -170,7 +184,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/03.jpg" class="img" alt="Champagne">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Le meilleur du Champagne</p>
+						<p class="p_figures p_figures_bold">Le meilleur du Champagne</p>
 						<p class="p_figures">Pompadour</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -181,7 +195,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/04.jpg" class="img" alt="Constructeurs">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Réalisez vos projets</p>
+						<p class="p_figures p_figures_bold">Réalisez vos projets</p>
 						<p class="p_figures">Maquettes</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -192,7 +206,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/05.jpg" class="img" alt="Prêt à porter femme">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Lin & Coton</p>
+						<p class="p_figures p_figures_bold">Lin & Coton</p>
 						<p class="p_figures">Shoping</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -203,7 +217,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/06.jpg" class="img" alt="Architectes">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Au Fil du Temps</p>
+						<p class="p_figures p_figures_bold">Au Fil du Temps</p>
 						<p class="p_figures">Architectes</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -214,7 +228,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/07.jpg" class="img" alt="Aérospatial">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Toujours à la pointe !</p>
+						<p class="p_figures p_figures_bold">Toujours à la pointe !</p>
 						<p class="p_figures">Recherche</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -225,7 +239,7 @@
 			<figure class="figures">
 				<img src="images/portfolio/08.jpg" class="img" alt="Gestion locative">
 					<figcaption class="texte_figure">
-						<p class="p_figures">Pour une meilleure Gestion</p>
+						<p class="p_figures p_figures_bold">Pour une meilleure Gestion</p>
 						<p class="p_figures">Gestion</p>
 
 							<div class="oeil"><i class="fas fa-eye"></i></div>
@@ -249,11 +263,11 @@
 				<p>WebAgency SAS
 				<br><span>25, Rue d'Hauteville 75010 Paris</span>
 				<br>Tél. 01 02 03 04 05</p>
-				<p><input type="text" name="nom" class="nom" placeholder="Nom" size="31" maxlength="10" /></p>
-    			<p><input type="text" name="prenom" class="prenom" placeholder="Prénom" size="31" maxlength="10" /></p>
-      			<p><input type="email" name="email" class="email" placeholder="Email" size="31" maxlength="10" /><p>
-  				<textarea name="message" class="message" placeholder="Message" rows="9" cols="32" ></textarea>
-      			<p class="bouton_envoyer" ><input type="submit" class="envoyer" value="Envoyer" /></p> <!--Bouton Envoyer-->
+				<p><input type="text" name="nom" class="nom" placeholder="Nom" size="31" maxlength="10" required /></p>
+      	<p><input type="email" name="email" class="email" placeholder="Email" size="31" maxlength="10" required/><p>
+				<p><input type="text" name="sujet" class="sujet" placeholder="Sujet" size="31" maxlength="10" required /></p>
+  			<textarea name="message" class="message" placeholder="Message" rows="9" cols="32" required ></textarea>
+      	<p class="bouton_envoyer" ><input type="submit" class="envoyer" value="Envoyer" /></p> <!--Bouton Envoyer-->
 			</form>
 		</div>
 
