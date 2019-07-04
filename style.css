@@ -1,6 +1,6 @@
-  html {
-  height: 100%;
-  width: 100%;
+html {
+height: 100%;
+width: 100%;
 }
 
 body {
@@ -14,11 +14,6 @@ body {
 }
 
 /* --- HEADER --- */
-
-header{
-  height: 100%;
-}
-
 .header {
   display: flex;
   justify-content: space-around;
@@ -75,7 +70,7 @@ a {
 }
 
 /* --- BANNIERE --- */
-.banniere {
+#banniere {
   position: relative;
   background-image: url(images/slider/bg1.jpg);
   background-repeat: no-repeat;
@@ -534,25 +529,37 @@ iframe {
 /* ------- MEDIA QUERIES ------- */
 
 /* -- FORMAT 1440 -- */
-@media all and (max-width: 1440px) {
- /*.barre_degrade_banniere {
-   display: none;
-   top: 100vh;
-    height: 90px;
-  }*/
-
-  /*.barre_degrade_nos_services {
+@media all and (min-width: 1440px) {
+  
+  .barre_degrade_banniere {
     display: none;
-    height: 110px;
-    z-index: -10;
+    /*top: 100vh;
+    height: 110px;*/
   }
-}*/
 
+  #nos_services{
+    padding-top: 5vh;
+    height: 130vh;
+  }
+
+  .barre_degrade_nos_services {
+    display: none;
+    /*height: 110px;
+    top: 120vh;
+    z-index: -10;*/
+  }
+
+  #nos_projets{
+    height: 120vh;
+  }
+}
 
 /*  FORMAT 1024  */
-@media all and (max-width: 1024px){
-/*  .barre_degrade_banniere {
-    top: 34vh;
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  
+  .barre_degrade_banniere {
+    position: absolute;
+    top: 73vh;
     height: 106px;
     width: 100%;
     background-image: linear-gradient(to top, #ccc, white);
@@ -562,11 +569,14 @@ iframe {
     top: unset;
   }
 
-  .banniere {
+  #banniere {
     background-size: auto 35vw;
     background-position-y: 9vw;
   }
 
+  #nos_services{
+    height: 110vh;
+  }
   .image_ordinateur {
     padding-right: unset;
   }
@@ -576,8 +586,13 @@ iframe {
   }
 
   .barre_degrade_nos_services {
+    top: 150vh;
     height: 50px;
     z-index: -10;
+  }
+
+  #nos_projets{
+    height: 110vh;
   }
 
   .figures {
@@ -588,14 +603,18 @@ iframe {
   .barre_menu {
     width: 100%;
   }
-}*/
+}
 
 /* -- FORMAT I-PAD -- */
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
 
-  /* #banniere{
+  #banniere{
     margin-top: 7vh;
     height: 50vh;
+  }
+
+  .{
+    height: 100vh;
   }
 
   nav {
@@ -618,14 +637,13 @@ iframe {
   }
 
   .barre_degrade_banniere {
-    top: 42vh;
+    top: 40vh;
     height: 95px;
   }
 
   #nos_services{
     height: 70vh;
   }
-
   .conteneur_nos_services {
     display: flex;
     flex-direction: row;
@@ -659,7 +677,6 @@ iframe {
   #nos_projets{
     height: 110vh;
   }
-
   .figures {
     width: 32%;
     margin: 10px;
@@ -668,20 +685,107 @@ iframe {
   #formulaire {
     left: unset;
     width: auto;
-  } */
+  }
 }
 
-/* -- FORMAT IPHONE 6 --*/
-@media all and (max-width: 375px) {
+
+/* -- FORMAT AUTOUR DES 700 -- */
+@media all and (min-width: 376px) and (max-width: 767px) {
+  
+  {
+    height: 10vh;
+  }
+
   .header {
     flex-direction: column;
     align-items: center;
+    height: 110px;
+  }
+
+  #logo{
+    margin-left: 0;
+    padding-top: 1vh;
+  }
+
+  nav{
+    height: 5vh;
+    width: 80%;
+  }
+
+ .nav_ul_first_page {
+    height: 3vw;
+  }
+
+  .nav_ul_li_first_page {
+    height: 3vw;
+  }
+
+  .banniere{
+    height: 100%;
+    margin-top: 10vh;
+  }
+  
+  .texte_banniere { 
+    top: 14vh;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    top: 22vh;
+  }
+
+  .barre_degrade_banniere {
+    top: 60vh;
+  }
+
+  #nos_services{
+    height:  190vh;
+  }
+
+  .services{
+    padding-top: 0;
+  }
+
+  .texte_services{
+    width: 70%;
+  }
+
+  .texte{
+    margin-left: 3vw;
+  }
+
+  .barre_menu{
+    width: 100%;
+  }
+
+  .figures{
+    margin: 2px 2px 20px 2px;
+    width: 22%; 
+  }
+
+  #formulaire{
+    width: 40%;
+    left: 50%;
+  }
+}
+
+
+/* -- FORMAT IPHONE 6 --*/
+@media all and (max-width: 375px) {
+  
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: 112px;
   }
 
   #logo {
     height: unset;
     width: unset;
-    padding-top: 1vh;
+    padding-top: 1.5vh;
     background-repeat: unset;
     margin-left: unset;
   }
@@ -700,7 +804,7 @@ iframe {
     height: 30px;
   }
 
-  .banniere {
+  #banniere {
     background-size: auto 141vw;
     background-position-x: -155vw;
     background-position-y: 27vw;
@@ -771,7 +875,7 @@ iframe {
   }
 
   #nos_projets{
-    height: 260vh;
+    height: 320vh;
   }
 
   .projets {
@@ -784,11 +888,12 @@ iframe {
 
   .conteneur_figures {
     margin-top: 14px;
+    margin-bottom: 10px;
   }
 
   .figures {
     margin-bottom: unset;
-    width: 60%;
+    width: 80%;
     margin: 10px;
   }
 
