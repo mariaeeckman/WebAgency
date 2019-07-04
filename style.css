@@ -14,7 +14,12 @@ body {
 }
 
 /* --- HEADER --- */
-header {
+
+header{
+  height: 100%;
+}
+
+.header {
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -70,7 +75,7 @@ a {
 }
 
 /* --- BANNIERE --- */
-#banniere {
+.banniere {
   position: relative;
   background-image: url(images/slider/bg1.jpg);
   background-repeat: no-repeat;
@@ -527,24 +532,27 @@ iframe {
 
 
 /* ------- MEDIA QUERIES ------- */
-/* -- FORMAT 1440 -- */
-@media all and (min-width: 1440px) {
-  .barre_degrade_banniere {
-    top: 81vh;
-    height: 110px;
-  }
 
-  .barre_degrade_nos_services {
+/* -- FORMAT 1440 -- */
+@media all and (max-width: 1440px) {
+ /*.barre_degrade_banniere {
+   display: none;
+   top: 100vh;
+    height: 90px;
+  }*/
+
+  /*.barre_degrade_nos_services {
+    display: none;
     height: 110px;
     z-index: -10;
   }
-}
+}*/
+
 
 /*  FORMAT 1024  */
-@media all and (min-width: 1024px) and (max-width: 1439px) {
-  .barre_degrade_banniere {
-    position: absolute;
-    top: 64vh;
+@media all and (max-width: 1024px){
+/*  .barre_degrade_banniere {
+    top: 34vh;
     height: 106px;
     width: 100%;
     background-image: linear-gradient(to top, #ccc, white);
@@ -554,7 +562,7 @@ iframe {
     top: unset;
   }
 
-  #banniere {
+  .banniere {
     background-size: auto 35vw;
     background-position-y: 9vw;
   }
@@ -580,12 +588,12 @@ iframe {
   .barre_menu {
     width: 100%;
   }
-}
+}*/
 
 /* -- FORMAT I-PAD -- */
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (max-width: 768px) {
 
-  #banniere{
+  /* #banniere{
     margin-top: 7vh;
     height: 50vh;
   }
@@ -610,13 +618,14 @@ iframe {
   }
 
   .barre_degrade_banniere {
-    top: 34vh;
+    top: 42vh;
     height: 95px;
   }
 
   #nos_services{
     height: 70vh;
   }
+
   .conteneur_nos_services {
     display: flex;
     flex-direction: row;
@@ -650,6 +659,7 @@ iframe {
   #nos_projets{
     height: 110vh;
   }
+
   .figures {
     width: 32%;
     margin: 10px;
@@ -658,21 +668,20 @@ iframe {
   #formulaire {
     left: unset;
     width: auto;
-  }
+  } */
 }
 
 /* -- FORMAT IPHONE 6 --*/
-@media all and (min-width: 375px) and (max-width: 767px) {
-  header {
+@media all and (max-width: 375px) {
+  .header {
     flex-direction: column;
     align-items: center;
-    height: 112px;
   }
 
   #logo {
     height: unset;
     width: unset;
-    padding-top: unset;
+    padding-top: 1vh;
     background-repeat: unset;
     margin-left: unset;
   }
@@ -691,7 +700,7 @@ iframe {
     height: 30px;
   }
 
-  #banniere {
+  .banniere {
     background-size: auto 141vw;
     background-position-x: -155vw;
     background-position-y: 27vw;
@@ -761,6 +770,10 @@ iframe {
     font-size: 15px;
   }
 
+  #nos_projets{
+    height: 260vh;
+  }
+
   .projets {
     padding-top: 23vw;
   }
@@ -771,12 +784,11 @@ iframe {
 
   .conteneur_figures {
     margin-top: 14px;
-    margin-bottom: 10px;
   }
 
   .figures {
     margin-bottom: unset;
-    width: 29%;
+    width: 60%;
     margin: 10px;
   }
 
