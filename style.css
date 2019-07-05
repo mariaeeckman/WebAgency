@@ -530,7 +530,7 @@ iframe {
 
 /* -- FORMAT 1440 -- */
 @media all and (min-width: 1440px) {
-  
+
   .barre_degrade_banniere {
     display: none;
     /*top: 100vh;
@@ -538,8 +538,12 @@ iframe {
   }
 
   #nos_services{
+    padding-top: 0;
+  }
+
+  #nos_services{
     padding-top: 5vh;
-    height: 130vh;
+    height: 100%;
   }
 
   .barre_degrade_nos_services {
@@ -550,19 +554,20 @@ iframe {
   }
 
   #nos_projets{
-    height: 120vh;
+    height: 100%;
   }
 }
 
 /*  FORMAT 1024  */
 @media all and (min-width: 1024px) and (max-width: 1439px) {
-  
+
   .barre_degrade_banniere {
-    position: absolute;
+    display: none;
+    /*position: absolute;
     top: 73vh;
     height: 106px;
     width: 100%;
-    background-image: linear-gradient(to top, #ccc, white);
+    background-image: linear-gradient(to top, #ccc, white);*/
   }
 
   button {
@@ -609,12 +614,8 @@ iframe {
 @media all and (min-width: 768px) and (max-width: 1023px) {
 
   #banniere{
-    margin-top: 7vh;
+    margin-top: 7vW;
     height: 50vh;
-  }
-
-  .{
-    height: 100vh;
   }
 
   nav {
@@ -637,8 +638,9 @@ iframe {
   }
 
   .barre_degrade_banniere {
-    top: 40vh;
-    height: 95px;
+    display: none;
+    /*top: 40vh;
+    height: 95px;*/
   }
 
   #nos_services{
@@ -666,9 +668,10 @@ iframe {
   }
 
   .barre_degrade_nos_services {
-    z-index: -10;
+    display: none;
+    /*z-index: -10;
     height: 87px;
-    top: 62vh;
+    top: 62vh;*/
   }
 
   .barre_menu_ul {
@@ -691,15 +694,11 @@ iframe {
 
 /* -- FORMAT AUTOUR DES 700 -- */
 @media all and (min-width: 376px) and (max-width: 767px) {
-  
-  {
-    height: 10vh;
-  }
 
   .header {
     flex-direction: column;
     align-items: center;
-    height: 110px;
+    height: 14VW;
   }
 
   #logo{
@@ -708,7 +707,7 @@ iframe {
   }
 
   nav{
-    height: 5vh;
+    height: 4vw;
     width: 80%;
   }
 
@@ -722,11 +721,11 @@ iframe {
 
   .banniere{
     height: 100%;
-    margin-top: 10vh;
+    margin-top: 9vw;
   }
-  
-  .texte_banniere { 
-    top: 14vh;
+
+  .texte_banniere {
+    top: 14vw;
   }
 
   h1 {
@@ -734,15 +733,15 @@ iframe {
   }
 
   button {
-    top: 22vh;
+    top: 21vw;
   }
 
   .barre_degrade_banniere {
-    top: 60vh;
+    top: 60vw;
   }
 
   #nos_services{
-    height:  190vh;
+    height:  160vw;
   }
 
   .services{
@@ -760,10 +759,13 @@ iframe {
   .barre_menu{
     width: 100%;
   }
+ #nos_projets{
+   height: 180VW;
+ }
 
   .figures{
     margin: 2px 2px 20px 2px;
-    width: 22%; 
+    width: 40%;
   }
 
   #formulaire{
@@ -775,7 +777,7 @@ iframe {
 
 /* -- FORMAT IPHONE 6 --*/
 @media all and (max-width: 375px) {
-  
+
   .header {
     flex-direction: column;
     align-items: center;
