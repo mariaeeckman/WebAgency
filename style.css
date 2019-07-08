@@ -1,4 +1,5 @@
-html {
+
+html{
 height: 100%;
 width: 100%;
 }
@@ -615,7 +616,7 @@ iframe {
 
   #banniere{
     margin-top: 7vW;
-    height: 50vh;
+    height: 40vh;
   }
 
   nav {
@@ -644,7 +645,7 @@ iframe {
   }
 
   #nos_services{
-    height: 70vh;
+    height: 70%;
   }
   .conteneur_nos_services {
     display: flex;
@@ -677,9 +678,21 @@ iframe {
   .barre_menu_ul {
     width: unset;
   }
+
   #nos_projets{
-    height: 110vh;
+    height: 100%;
+    padding-top: 0;
   }
+
+  .projets{
+    padding-top: 1%;
+  }
+
+  #contact{
+    margin-top: 50%;
+    height: 100%;
+  }
+
   .figures {
     width: 32%;
     margin: 10px;
@@ -698,7 +711,11 @@ iframe {
   .header {
     flex-direction: column;
     align-items: center;
-    height: 14VW;
+    height: 18VW;
+  }
+
+  #banniere{
+    height: 50%;
   }
 
   #logo{
@@ -725,23 +742,36 @@ iframe {
   }
 
   .texte_banniere {
-    top: 14vw;
+    top: 17vw;
+    margin-left: 9%;
+    width: 50%;
   }
 
   h1 {
     font-size: 20px;
   }
 
+  p{
+    width: 90%
+    font-size: 5px;
+  }
+
   button {
-    top: 21vw;
+    display: none;
   }
 
   .barre_degrade_banniere {
-    top: 60vw;
+    display: none;
+    /*top: 60vw;*/
+  }
+
+  .barre_degrade_nos_services {
+    display: none;
+    /*top: 60vw;*/
   }
 
   #nos_services{
-    height:  160vw;
+    height:  100%;
   }
 
   .services{
@@ -749,7 +779,8 @@ iframe {
   }
 
   .texte_services{
-    width: 70%;
+    width: 90%;
+    height: 100%;
   }
 
   .texte{
@@ -759,9 +790,14 @@ iframe {
   .barre_menu{
     width: 100%;
   }
- #nos_projets{
-   height: 180VW;
- }
+   #nos_projets{
+   height: 100%;
+   margin-top: 50%;
+  }
+
+  #contact{
+  margin-top: 70%;
+}
 
   .figures{
     margin: 2px 2px 20px 2px;
